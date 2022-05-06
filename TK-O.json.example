@@ -1,0 +1,34 @@
+{
+	"@context": "http://www.w3.org/ns/odrl.jsonld",
+	"@type": "Offer",
+	"uid": "http://example.com/tklabels/general/TK-O",
+	"permission": [
+		{
+			"action": "dpv:use",
+			"target": "http://example.com/document:XZY",
+			"assigner": "http://example.com/idsv/IndigenousCommunity",
+			"assigmee": "http://example.com/idsv/FutureUser",
+			"constraint": [
+				{
+					"leftOperand": "Purpose",
+					"operator": "eq",
+					"rightOperand": "svpu:Education"
+				}
+			]
+		},
+		{
+			"action": "dpv:share",
+			"target": "http://example.com/document:XZY",
+			"assigner": "http://example.com/idsv/IndigenousCommunity",
+			"assigmee": "http://example.com/idsv/FutureUser",
+			"constraint": [
+				{
+					"leftOperand": "Purpose",
+					"operator": "eq",
+					"rightOperand": "svpu:Education"
+				}
+			]
+		}
+	],
+	"LabelOriginContent": "Certain material has been identified by tribal members and can be used and shared for educational purposes."
+}
