@@ -10,7 +10,7 @@
 			"assigmee": "http://example.com/idsv/FutureUser",
 			"constraint": [
 				{
-					"leftOperand": "Purpose",
+					"leftOperand": "dpv:Purpose",
 					"operator": "eq",
 					"rightOperand": "svpu:Education"
 				}
@@ -23,7 +23,7 @@
 			"assigmee": "http://example.com/idsv/FutureUser",
 			"constraint": [
 				{
-					"leftOperand": "Purpose",
+					"leftOperand": "dpv:Purpose",
 					"operator": "eq",
 					"rightOperand": "svpu:Education"
 				}
