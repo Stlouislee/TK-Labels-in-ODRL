@@ -1,0 +1,57 @@
+# no public use at all, for internal user only
+{
+	"@context": "http://www.w3.org/ns/odrl.jsonld",
+	"@type": "Set",
+	"uid": "http://example.com/tklabels/general/TK-CL",
+	"action": "odrl:use",
+	"target": "http://example.com/document:XZY",
+	"assigner": "http://example.com/idsv/IndigenousClan",
+	"prohibition": [
+		{
+			"assigmee": "http://example.com/idsv/ExternalUser"
+		},
+	],
+	"permission" : [
+		{
+			"assigmee" : "http://example.com/idsv/ClanMember"
+		}
+	]
+	"LabelOriginContent": "This Label is being used to indicate that this material is traditionally and usually not publicly available. The Label lets future users know that this material has specific conditions for use and sharing because of clan membership and/or relationships. This material is not, and never was, free, public, or available for everyone. This Label asks viewers of these materials to respect the cultural values and expectations about circulation and use defined by designated clans, members, and their internal relations."
+}
+
+# can be used by external user with conditions, e.g., make informed decision
+{
+	"@context": "http://www.w3.org/ns/odrl.jsonld",
+	"@type": "Set",
+	"uid": "http://example.com/tklabels/general/TK-CL",
+	"action": "odrl:use",
+	"target": "http://example.com/document:XZY",
+	"assigner": "http://example.com/idsv/IndigenousClan",
+	"permission" : [
+		{
+			"assigmee" : "http://example.com/idsv/ClanMember"
+		},
+		{
+			"assigmee": "http://example.com/idsv/ExternalUser"
+			"duty": [
+				{
+					"action": [
+						{
+							"rdf:value": {
+								"@id": "make informed decision"
+							},
+							"refinement": [
+								{
+									"leftOperand": "ClanInformed",
+									"operator": "eq",
+									"rightOperand": "True"
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+	"LabelOriginContent": "This Label is being used to indicate that this material is traditionally and usually not publicly available. The Label lets future users know that this material has specific conditions for use and sharing because of clan membership and/or relationships. This material is not, and never was, free, public, or available for everyone. This Label asks viewers of these materials to respect the cultural values and expectations about circulation and use defined by designated clans, members, and their internal relations."
+}
