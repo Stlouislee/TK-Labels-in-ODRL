@@ -1,0 +1,17 @@
+{
+	"@context": "http://www.w3.org/ns/odrl.jsonld",
+	"@type": "Set",
+	"uid": "http://example.com/tklabels/general/TK-NC",
+	"prohibition": [
+		{
+			"action": "cc:CommercialUse",
+			"target": "http://example.com/document:XZY",
+			"assigner": "http://example.com/idsv/IndigenousCommunity",
+			"assigmee": "http://example.com/idsv/FutureUser"
+		},
+		{
+			"action": "odrl:sell"
+		}
+	],
+	"LabelOriginContent": "This is not sold. This material should not be used in any commercial ways, including ways that derive profit from sale or production for non-indigenous people."
+}
