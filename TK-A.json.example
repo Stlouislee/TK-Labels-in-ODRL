@@ -1,0 +1,31 @@
+{
+	"@context": "http://www.w3.org/ns/odrl.jsonld",
+  "@type": "Offer",
+  "uid": "http://example.com/tklabels/general/TK-A",
+  "permission": [
+    {
+      "action": "dpv:use",
+      "target": "http://example.com/document:XZY",
+      "assigner": "http://example.com/idsv/IndigenousCommunity",
+      "assigmee": "http://example.com/idsv/FutureUser",
+      "duty": [
+        {
+          "action": [
+            {
+              "rdf:value": {
+                "@id": "use the correct attribution"
+              },
+              "refinement": [
+                {
+                  "leftOperand": "DataSubjectName",
+                  "operator": "eq",
+                  "rightOperand": "IndigenousCommunity"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
